@@ -1,0 +1,13 @@
+[07-Jun-2016 19:06:47 UTC] PHP Notice:  Undefined index: userImage in /home/vbcvit/public_html/uploadImg/upload.php on line 3
+[07-Jun-2016 19:07:33 UTC] PHP Notice:  Undefined index: userImage in /home/vbcvit/public_html/uploadImg/upload.php on line 3
+[29-Aug-2016 16:06:36 UTC] PHP Notice:  Undefined index: userImage in /home/vbcvit/public_html/uploadImg/upload.php on line 3
+[29-Aug-2016 16:16:23 UTC] PHP Notice:  Undefined index: userImage in /home/vbcvit/public_html/uploadImg/upload.php on line 3
+[31-Aug-2016 08:31:45 UTC] PHP Notice:  Undefined index: userImage in /home/vbcvit/public_html/uploadImg/upload.php on line 3
+[24-Sep-2016 12:53:15 UTC] PHP Notice:  Undefined index: userImage in /home/vbcvit/public_html/uploadImg/upload.php on line 3
+[24-Sep-2016 13:24:04 UTC] PHP Warning:  imagecreatefrompng(): gd-png:  fatal libpng error: Read Error: truncated data in /home/vbcvit/public_html/uploadImg/upload.php on line 75
+[24-Sep-2016 13:24:04 UTC] PHP Warning:  imagecreatefrompng(): gd-png error: setjmp returns error condition in /home/vbcvit/public_html/uploadImg/upload.php on line 75
+[24-Sep-2016 13:24:04 UTC] PHP Warning:  imagecreatefrompng(): 'images/1474723444.png' is not a valid PNG file in /home/vbcvit/public_html/uploadImg/upload.php on line 75
+[24-Sep-2016 14:39:41 UTC] PHP Notice:  Undefined index: userImage in /home/vbcvit/public_html/uploadImg/upload.php on line 3
+[24-Sep-2016 17:09:20 UTC] PHP Notice:  Undefined index: userImage in /home/vbcvit/public_html/uploadImg/upload.php on line 3
+[24-Sep-2016 17:15:27 UTC] PHP Notice:  Undefined index: userImage in /home/vbcvit/public_html/uploadImg/upload.php on line 3
+[06-Mar-2017 16:34:31 UTC] PHP Notice:  Undefined index: userImage in /home/vbcvit/public_html/uploadImg/upload.php on line 3

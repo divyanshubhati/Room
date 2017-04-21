@@ -1,0 +1,72 @@
+<html>
+<head>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<style>
+    body {
+    background-color: #f5f5f5;
+}
+</style>
+<script type="text/javascript">
+$(document).ready(function (e) {
+    document.getElementById("file").onchange = function() {
+    document.getElementById("form").submit();
+    
+     
+
+    $("#uploadForm").on('submit',(function(e) {
+    			
+                    e.preventDefault();
+                    document.getElementById("message").style.visibility = "visible";
+                    	
+                        	
+                    $.ajax({
+                    url: "upload.php",
+                    type: "POST",
+                    data:  new FormData(this),
+                    contentType: false,
+                    timeout: 3000000,
+                    cache: false,
+                    processData:false,
+                    success: function(data) {
+                    	
+                        $("#targetLayer").html(data);
+                        
+                        $('.note-image-url', window.parent.document).val(data);
+                        $('#url').val(data);
+                        $('button', window.parent.document).removeClass("disabled");
+                        $(".note-image-btn", window.parent.document).removeAttr("disabled");
+			document.location.reload();
+                        
+                    },
+                        error: function(){
+                        $('.note-image-url', window.parent.document).val("Try again");
+                        document.getElementById("message").style.visibility = "hidden";	
+                        
+                    } 	        
+                });
+    }));
+});
+};
+</script>
+
+</head>
+<body>
+
+<form id="uploadForm" action="./upload.php" method="post" enctype="multipart/form-data">
+
+<div id="uploadFormLayer">
+<div class="form-group">
+<input name="userImage" type="file" class="inputFile" id="file" />
+</div>
+<input type="submit" value="Upload" class="btnSubmit" />
+</form>
+<div id="message" style="visibility: hidden;">
+    <img width="150px" src="./loading-x.gif">
+<strong>Kindly wait... Uploading<strong>
+        </div>
+</div>
+
+</body>
+</html>
